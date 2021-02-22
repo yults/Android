@@ -10,17 +10,17 @@
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_post"
         android:onClick="onAddClickEvent"
+        android:text="@string/new_post"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/refresh"
+        android:id="@+id/update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onReloadClickEvent"
-        android:text="@string/refresh"
+        android:onClick="onAddClickEvent"
+        android:text="@string/update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -28,9 +28,9 @@
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/myRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/myRecyclerView"
         app:layout_constraintTop_toTopOf="@+id/myRecyclerView" />
 
     <androidx.recyclerview.widget.RecyclerView
